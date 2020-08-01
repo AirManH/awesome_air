@@ -8,3 +8,5 @@ My Awesome (window manager) configuration files.
 - chromium
 - qv2ray
 - code
+- telegram-desktop
+- plasma-workspace-wallpapers
