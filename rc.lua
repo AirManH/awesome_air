@@ -48,7 +48,7 @@ end
 beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "xterm"
+terminal = "qterminal"
 editor = os.getenv("EDITOR") or "nano"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -90,8 +90,19 @@ myawesomemenu = {
    { "quit", function() awesome.quit() end },
 }
 
-mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesome_icon },
-                                    { "open terminal", terminal }
+my_network_menu = {
+    { "qv2ray", "qv2ray" },
+    { "chromium", "chromium" },
+}
+
+my_develop_menu = {
+    { "VS Code", "code"},
+}
+
+mymainmenu = awful.menu({ items = { { "Awesome", myawesomemenu, beautiful.awesome_icon },
+                                    { "Network", my_network_menu },
+                                    { "Develop", my_develop_menu },
+                                    { "Open Terminal", terminal }
                                   }
                         })
 
