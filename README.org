@@ -1,0 +1,23 @@
+* awesome_air
+
+My Awesome (window manager) configuration files.
+
+** Requirement
+
+The following package names are the names in [[https://www.archlinux.org/][Arch Linux]].
+
+- gnome-terminal
+
+*** Optional
+
+- chromium
+- qv2ray
+- code
+- telegram-desktop
+- plasma-workspace-wallpapers
+- clion
+- Emacs
+- Spotify
+- flameshot
+- fcitx5
+- fcitx5-config-qt

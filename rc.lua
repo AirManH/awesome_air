@@ -48,7 +48,7 @@ end
 beautiful.init("/home/air/.config/awesome/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "qterminal"
+terminal = "gnome-terminal"
 editor = os.getenv("EDITOR") or "nano"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -96,11 +96,16 @@ my_network_menu = {
 }
 
 my_develop_menu = {
-    { "VS Code", "code"},
+     { "Emacs", "emacs" },
+     { "VS Code", "code"},
+     { "CLion", "clion" }
 }
 
 my_other_menu = {
     { "Telegram", "telegram-desktop" },
+    { "Spotify", "spotify" },
+    { "Flame shot", "flameshot" },
+    { "fcitx5-config-qt", "fcitx5-config-qt" },
 }
 
 mymainmenu = awful.menu({ items = { { "Awesome", myawesomemenu, beautiful.awesome_icon },
@@ -187,7 +192,7 @@ awful.screen.connect_for_each_screen(function(s)
     set_wallpaper(s)
 
     -- Each screen has its own tag table.
-    local names = { "1", "2", "3", "4", "5", "6", "7", "8", "9" }
+    local names = { "1", "2", "3", "4" } -- , "5", "6", "7", "8", "9" }
     local l = awful.layout.suit  -- Just to save some typing: use an alias.
     local layouts = { l.floating, l.tile, l.floating, l.fair, l.max, l.floating, l.tile.left, l.floating, l.floating }
     awful.tag(names, s, awful.layout.layouts[1])
@@ -250,6 +255,7 @@ root.buttons(gears.table.join(
 -- }}}
 
 -- {{{ Key bindings
+-- see https://awesomewm.org/apidoc/documentation/05-awesomerc.md.html#Key_bindings
 globalkeys = gears.table.join(
     awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
               {description="show help", group="awesome"}),
@@ -315,8 +321,8 @@ globalkeys = gears.table.join(
               {description = "increase the number of columns", group = "layout"}),
     awful.key({ modkey, "Control" }, "l",     function () awful.tag.incncol(-1, nil, true)    end,
               {description = "decrease the number of columns", group = "layout"}),
-    awful.key({ modkey,           }, "space", function () awful.layout.inc( 1)                end,
-              {description = "select next", group = "layout"}),
+    -- awful.key({ modkey,           }, "space", function () awful.layout.inc( 1)                end,
+    --           {description = "select next", group = "layout"}),
     awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(-1)                end,
               {description = "select previous", group = "layout"}),
 
