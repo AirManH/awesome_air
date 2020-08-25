@@ -2,6 +2,12 @@
 
 My Awesome (window manager) configuration files.
 
+** Keybinds
+
+| shortcut   | description                          |
+|------------+--------------------------------------|
+| /PrintScr/ | take screenshot with =flameshot gui= |
+
 ** Requirement
 
 The following package names are the names in [[https://www.archlinux.org/][Arch Linux]].

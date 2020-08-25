@@ -257,6 +257,10 @@ root.buttons(gears.table.join(
 -- {{{ Key bindings
 -- see https://awesomewm.org/apidoc/documentation/05-awesomerc.md.html#Key_bindings
 globalkeys = gears.table.join(
+    -- {{{ custom
+    awful.key({                   }, "Print",  function () awful.spawn("flameshot gui") end,
+              {description="screenshot", group="launcher"}),
+    -- }}} custom
     awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
               {description="show help", group="awesome"}),
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev,
