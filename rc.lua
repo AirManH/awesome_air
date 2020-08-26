@@ -106,6 +106,7 @@ my_other_menu = {
     { "Spotify", "spotify" },
     { "Flame shot", "flameshot" },
     { "fcitx5-config-qt", "fcitx5-config-qt" },
+    { "font-manager", "font-manager"}
 }
 
 mymainmenu = awful.menu({ items = { { "Awesome", myawesomemenu, beautiful.awesome_icon },

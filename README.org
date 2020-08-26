@@ -27,3 +27,4 @@ The following package names are the names in [[https://www.archlinux.org/][Arch 
 - flameshot
 - fcitx5
 - fcitx5-config-qt
+- font-manager
