@@ -112,7 +112,7 @@ my_other_menu = {
 mymainmenu = awful.menu({ items = { { "Awesome", myawesomemenu, beautiful.awesome_icon },
                                     { "Network", my_network_menu },
                                     { "Develop", my_develop_menu },
-				    { "Other", my_other_menu },
+                                    { "Other", my_other_menu },
                                     { "Open Terminal", terminal }
                                   }
                         })
