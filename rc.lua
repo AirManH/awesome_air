@@ -90,6 +90,10 @@ myawesomemenu = {
    { "quit", function() awesome.quit() end },
 }
 
+my_tool_menu = {
+    { "File Manager", "nautilus"}
+}
+
 my_network_menu = {
     { "qv2ray", "qv2ray" },
     { "chromium", "chromium" },
@@ -110,6 +114,7 @@ my_other_menu = {
 }
 
 mymainmenu = awful.menu({ items = { { "Awesome", myawesomemenu, beautiful.awesome_icon },
+                                    { "Tools", my_tool_menu},
                                     { "Network", my_network_menu },
                                     { "Develop", my_develop_menu },
                                     { "Other", my_other_menu },

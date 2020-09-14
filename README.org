@@ -28,3 +28,5 @@ The following package names are the names in [[https://www.archlinux.org/][Arch 
 - fcitx5
 - fcitx5-config-qt
 - font-manager
+- nautilus
+- breeze, breeze-gtk
