@@ -97,6 +97,7 @@ my_tool_menu = {
 my_network_menu = {
     { "qv2ray", "qv2ray" },
     { "chromium", "chromium" },
+    { "firefox", "firefox" }
 }
 
 my_develop_menu = {
