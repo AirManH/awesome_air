@@ -107,6 +107,7 @@ my_develop_menu = {
 }
 
 my_other_menu = {
+    { "deepin-wine-wechat", "/opt/deepinwine/apps/Deepin-WeChat/run.sh"},
     { "Telegram", "telegram-desktop" },
     { "Spotify", "spotify" },
     { "Flame shot", "flameshot" },
