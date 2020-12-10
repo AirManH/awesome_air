@@ -94,71 +94,19 @@ awful.layout.layouts = {
 -- }}}
 
 -- {{{ Menu
--- Create a launcher widget and a main menu
-myawesomemenu = {
-    {
-        "hotkeys",
-        function()
-            hotkeys_popup.show_help(nil, awful.screen.focused())
-        end
-    },
-    {"manual", terminal .. " -e man awesome"},
-    {"edit config", editor_cmd .. " " .. awesome.conffile},
-    {"restart", awesome.restart},
-    {
-        "quit",
-        function()
-            awesome.quit()
-        end
-    }
-}
 
-my_tool_menu = {
-    {"File Manager", "nautilus"}
-}
 
-my_network_menu = {
-    {"qv2ray", 'env QT_SCREEN_SCALE_FACTORS="1.1;1" qv2ray'},
-    {"chromium", "chromium"},
-    {"firefox", "firefox"}
-}
-
-my_develop_menu = {
-    {"Emacs", "emacs"},
-    {"VS Code", "code"},
-    {"CLion", "clion"}
-}
-
-my_other_menu = {
-    {"deepin-wine-wechat", "/opt/deepinwine/apps/Deepin-WeChat/run.sh"},
-    {"Telegram", "telegram-desktop"},
-    {"Spotify", "spotify"},
-    {"Flame shot", "flameshot"},
-    {"fcitx5-config-qt", "fcitx5-config-qt"},
-    {"font-manager", "font-manager"}
-}
-
-mymainmenu =
-    awful.menu(
-    {
-        items = {
-            {"Awesome", myawesomemenu, beautiful.awesome_icon},
-            {"Tools", my_tool_menu},
-            {"Network", my_network_menu},
-            {"Develop", my_develop_menu},
-            {"Other", my_other_menu},
-            {"Open Terminal", terminal}
-        }
-    }
-)
 praisewidget = wibox.widget.textbox()
 praisewidget.text = "You are great!"
+
+
+local my_menu = require("my_menu")
 
 mylauncher =
     awful.widget.launcher(
     {
         image = beautiful.awesome_icon,
-        menu = mymainmenu
+        menu = my_menu.main_menu
     }
 )
 
