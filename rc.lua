@@ -118,7 +118,7 @@ my_tool_menu = {
 }
 
 my_network_menu = {
-    {"qv2ray", "qv2ray"},
+    {"qv2ray", 'env QT_SCREEN_SCALE_FACTORS="1.1;1" qv2ray'},
     {"chromium", "chromium"},
     {"firefox", "firefox"}
 }
