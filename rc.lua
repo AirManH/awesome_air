@@ -316,7 +316,7 @@ root.buttons(
             {},
             3,
             function()
-                mymainmenu:toggle()
+                my_menu.main_menu:toggle()
             end
         ),
         awful.button({}, 4, awful.tag.viewnext),
@@ -363,7 +363,7 @@ globalkeys =
         {modkey},
         "w",
         function()
-            mymainmenu:show()
+            my_menu.main_menu:show()
         end,
         {description = "show main menu", group = "awesome"}
     ),
