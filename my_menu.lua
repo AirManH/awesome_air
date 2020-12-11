@@ -45,7 +45,8 @@ local awesome_menu = {
 local network_menu = {
     {"qv2ray", 'env QT_SCREEN_SCALE_FACTORS="1.1;1" qv2ray'},
     {"chromium", "chromium"},
-    {"firefox", "firefox"}
+    {"firefox", "firefox"},
+    {"firefox private", "firefox --private-window"}
 }
 
 local develop_menu = {
