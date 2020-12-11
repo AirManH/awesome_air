@@ -50,6 +50,7 @@ local network_menu = {
 
 local develop_menu = {
     {"Emacs", "emacs"},
+    {"Zathura", "zathura"},
     {"VS Code", "code"},
     {"CLion", "clion"}
 }

@@ -30,3 +30,4 @@ The following package names are the names in [[https://www.archlinux.org/][Arch 
 - font-manager
 - nautilus
 - breeze, breeze-gtk
+- zathura
