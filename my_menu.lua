@@ -60,6 +60,7 @@ local other_menu = {
     {"deepin-wine-wechat", "/opt/deepinwine/apps/Deepin-WeChat/run.sh"},
     {"Telegram", "telegram-desktop"},
     {"Spotify", "spotify"},
+    {"Baidu Net Disk", "/usr/lib/baidunetdisk/baidunetdisk"},
     {"Flame shot", "flameshot"},
     {"fcitx5-config-qt", "fcitx5-config-qt"},
     {"font-manager", "font-manager"}

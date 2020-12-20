@@ -31,3 +31,4 @@ The following package names are the names in [[https://www.archlinux.org/][Arch 
 - nautilus
 - breeze, breeze-gtk
 - zathura
+- baidunetdisk-bin
