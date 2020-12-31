@@ -32,3 +32,4 @@ The following package names are the names in [[https://www.archlinux.org/][Arch 
 - breeze, breeze-gtk
 - zathura
 - baidunetdisk-bin
+- nextcloud

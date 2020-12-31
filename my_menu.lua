@@ -59,6 +59,7 @@ local develop_menu = {
 local other_menu = {
     {"deepin-wine-wechat", "/opt/apps/com.qq.weixin.deepin/files/run.sh"},
     {"Telegram", "telegram-desktop"},
+    {"Nextcloud", "nextcloud"},
     {"Spotify", "spotify"},
     {"Baidu Net Disk", "/usr/lib/baidunetdisk/baidunetdisk"},
     {"Flame shot", "flameshot"},
