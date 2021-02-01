@@ -33,3 +33,8 @@ The following package names are the names in [[https://www.archlinux.org/][Arch 
 - zathura
 - baidunetdisk-bin
 - nextcloud
+- wps-office
+- pycharm-community-edition
+- deepin-wine-tim
+- deepin-wine-wechat
+- steam
