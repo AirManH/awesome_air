@@ -50,7 +50,8 @@ local network_menu = {
     {"qv2ray", 'env QT_SCREEN_SCALE_FACTORS="1.1;1" qv2ray'},
     {"chromium", "chromium"},
     {"firefox", "firefox"},
-    {"firefox private", "firefox --private-window"}
+    {"firefox private", "firefox --private-window"},
+    {"uget-gtk", "env LANG=zh_CN.UTF-8 uget-gtk"}
 }
 
 local develop_menu = {
