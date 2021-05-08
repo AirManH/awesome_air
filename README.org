@@ -39,3 +39,5 @@ The following package names are the names in [[https://www.archlinux.org/][Arch 
 - deepin-wine-wechat
 - steam
 - uget
+- okular
+- keepassxc

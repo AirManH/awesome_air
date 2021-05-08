@@ -22,6 +22,7 @@ local my_menu = {}
 
 local tool_menu = {
     {"File Manager", "nautilus"},
+    {"Okular", "env LANG=zh_CN.UTF-8 okular"},
     {"WPS Writer", "env LANG=zh_CN.UTF-8 wps"},
     {"WPS Spreadsheets", "env LANG=zh_CN.UTF-8 et"},
     {"WPS Presentation", "env LANG=zh_CN.UTF-8 wpp"},
@@ -69,6 +70,7 @@ local social_menu = {
 
 local other_menu = {
     {"Nextcloud", "nextcloud"},
+    {"KeePassXC", "env LANG=zh_CN.UTF-8 keepassxc"},
     {"Spotify", "spotify"},
     {"Baidu Net Disk", "/usr/lib/baidunetdisk/baidunetdisk"},
     {"Flame shot", "flameshot"},
