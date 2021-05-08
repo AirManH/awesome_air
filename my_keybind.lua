@@ -40,7 +40,7 @@ my_keybind.globalkeys =
     awful.key({modkey}, "Escape", awful.tag.history.restore, {description = "go back", group = "tag"}),
     awful.key(
         {modkey},
-        "j",
+        "k",
         function()
             awful.client.focus.byidx(1)
         end,
@@ -48,7 +48,7 @@ my_keybind.globalkeys =
     ),
     awful.key(
         {modkey},
-        "k",
+        "j",
         function()
             awful.client.focus.byidx(-1)
         end,
