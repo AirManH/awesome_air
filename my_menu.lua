@@ -17,12 +17,12 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
-
 local my_menu = {}
 
 local tool_menu = {
     {"File Manager", "nautilus"},
     {"Okular", "env LANG=zh_CN.UTF-8 okular"},
+    {"Inkscape", "env LANG=zh_CN.UTF-8 inkscape"},
     {"WPS Writer", "env LANG=zh_CN.UTF-8 wps"},
     {"WPS Spreadsheets", "env LANG=zh_CN.UTF-8 et"},
     {"WPS Presentation", "env LANG=zh_CN.UTF-8 wpp"},

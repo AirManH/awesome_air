@@ -41,3 +41,4 @@ The following package names are the names in [[https://www.archlinux.org/][Arch 
 - uget
 - okular
 - keepassxc
+- inkscape
